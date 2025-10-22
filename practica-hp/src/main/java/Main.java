@@ -11,10 +11,9 @@ public class Main {
         Factura entity = new Factura();
 
         entity.setNumeroFactura(1);
-        entity.setTotal(74.9);
-        entity.setNombreCliente("kevin");
+        entity.setTotal(64.9);
+        entity.setNombreCliente("angie");
         entity.setFecha(new Date());
-
         dao.insert(entity);
 
         List<Factura> lista = dao.getAll("Factura.All");

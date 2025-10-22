@@ -9,7 +9,6 @@ import java.util.Date;
 @NamedQueries({@NamedQuery(name = "Factura.All", query = "select e from Factura e")})
 public class Factura {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int numeroFactura;
 
     @Column

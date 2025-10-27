@@ -1,5 +1,7 @@
 import models.Publicacion;
+import services.IDAOAnioPublicacion;
 import services.IDAOPublicacion;
+import services.ImplIDAOAnioPublicacion;
 import services.ImplIDAOPublicacion;
 
 import java.util.Date;
@@ -7,17 +9,23 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        IDAOAnioPublicacion anioDao = new ImplIDAOAnioPublicacion();
+//        AnioPublicacion anio = new AnioPublicacion();
+//        anio.setAnio(1990);
+//        anio.setDescripcion("test");
+//
+//        dao.insert(anio);
+
         IDAOPublicacion dao = new ImplIDAOPublicacion();
-        Publicacion entity = new Publicacion();
+        Publicacion pub = new Publicacion();
+        pub.setAnio(anioDao.findById(1));
+        pub.setNombre("test");
+        pub.setFecha(new Date());
+        pub.setTitulo("1984");
 
-        entity.setDescripcion("Publicación nueva");
-        entity.setNombre("Publicación");
-        entity.setTitulo("Post");
-        entity.setFecha(new Date());
+        dao.insert(pub);
 
-        dao.insert(entity);
-
-        List<Publicacion> lista = dao.getAll("Publicacion.All");
+        List<Publicacion> lista = dao.getAll("Publicacion.PorAnio");
         lista.forEach(System.out::println);
     }
 }

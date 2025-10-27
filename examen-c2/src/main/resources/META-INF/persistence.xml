@@ -5,7 +5,7 @@
              version="3.2">
     <persistence-unit name="examen-c2">
         <class>models.Publicacion</class>
-        <!--        <class>models.Autor</class>-->
+        <class>models.AnioPublicacion</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver"
                       value="org.postgresql.Driver"/>

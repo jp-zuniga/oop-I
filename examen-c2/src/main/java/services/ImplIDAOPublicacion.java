@@ -19,6 +19,7 @@ public class ImplIDAOPublicacion implements IDAOPublicacion {
         } finally {
             entityManager.close();
         }
+        
         return null;
     }
 
@@ -57,12 +58,12 @@ public class ImplIDAOPublicacion implements IDAOPublicacion {
         EntityManager entityManager = EntityManagerAdmin.getInstance();
         try {
             entityManager.getTransaction().begin();
-            // Borrado lógico → cambiar restrictiva a true
             Publicacion p = entityManager.find(Publicacion.class, entity.getId());
             if (p != null) {
                 p.setRestrictiva(true);
                 entityManager.merge(p);
             }
+
             entityManager.getTransaction().commit();
         } catch (Exception e) {
             e.printStackTrace();
@@ -82,6 +83,7 @@ public class ImplIDAOPublicacion implements IDAOPublicacion {
         } finally {
             entityManager.close();
         }
+
         return null;
     }
 }

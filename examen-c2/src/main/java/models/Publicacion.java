@@ -7,10 +7,18 @@ import java.util.Date;
 @Entity
 @Table(name = "Publicacion")
 @NamedQueries({@NamedQuery(name = "Publicacion.All", query = "select e from Publicacion e")})
+@NamedQuery(
+        name = "Publicacion.PorAnio",
+        query = "select p from Publicacion as p join AnioPublicacion as a on p.anio.anio = a.anio"
+)
 public class Publicacion {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "anio_id", nullable = false)
+    private AnioPublicacion anio;
 
     @Column
     private String descripcion;
@@ -33,6 +41,14 @@ public class Publicacion {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public AnioPublicacion getAnio() {
+        return anio;
+    }
+
+    public void setAnio(AnioPublicacion anio) {
+        this.anio = anio;
     }
 
     public String getDescripcion() {
@@ -79,6 +95,7 @@ public class Publicacion {
     public String toString() {
         return "Publicacion{" +
                 "id=" + id +
+                ", anio=" + anio +
                 ", descripcion='" + descripcion + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", fecha=" + fecha +

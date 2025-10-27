@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4e2303c-85c9-4244-90a9-e73db44ff48f" name="Changes" comment="" />
+    <list default="true" id="e4e2303c-85c9-4244-90a9-e73db44ff48f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/AnioPublicacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/IDAOAnioPublicacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/ImplIDAOAnioPublicacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Publicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Publicacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/ImplIDAOPublicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/ImplIDAOPublicacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -31,6 +48,9 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="341LTpYRpG0LOH8khq37cWObAuM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

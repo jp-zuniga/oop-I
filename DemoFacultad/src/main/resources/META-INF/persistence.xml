@@ -22,7 +22,7 @@
         <class>com.openxava.naviox.model.SSORecord</class>
         <class>com.openxava.naviox.model.User</class>
         <class>com.openxava.naviox.model.LDAPConfiguration</class>
-        <class>org.example.DemoFacultad.model.Facultad</class>
+        <class>org.example.DemoFacultad.models.Facultad</class>
         <properties>
             <property name="javax.persistence.schema-generation.database.action" value="update"/>
             <property name="hibernate.show_sql" value="true"/>

@@ -9,7 +9,9 @@ public class EntityManagerAdmin {
     private static EntityManager instance;
 
     public static EntityManager getInstance() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT);
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory(
+            PERSISTENCE_UNIT);
+        
         instance = emf.createEntityManager();
         return instance;
     }

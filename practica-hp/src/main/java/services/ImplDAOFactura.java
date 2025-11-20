@@ -10,7 +10,10 @@ public class ImplDAOFactura implements DAOFactura {
     @Override
     public List<Factura> getAll(String nameQuery) {
         try (EntityManager em = EntityManagerAdmin.getInstance()) {
-            TypedQuery<Factura> query = em.createNamedQuery(nameQuery, Factura.class);
+            TypedQuery<Factura> query = em.createNamedQuery(
+                nameQuery,
+                Factura.class
+            );
             return query.getResultList();
         } catch (Exception e) {
             e.printStackTrace();

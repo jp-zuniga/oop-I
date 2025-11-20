@@ -8,11 +8,11 @@
             <property name="jakarta.persistence.jdbc.driver"
                       value="org.postgresql.Driver"/>
             <property name="jakarta.persistence.jdbc.url"
-                      value="jdbc:postgresql://localhost:5432/jpademo"/>
+                      value="jdbc:postgresql://localhost:5432/java_tmp"/>
             <property name="jakarta.persistence.jdbc.user"
-                      value="jpauser"/>
+                      value="java"/>
             <property name="jakarta.persistence.jdbc.password"
-                      value="jpatestpw"/>
+                      value="java_pw"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>

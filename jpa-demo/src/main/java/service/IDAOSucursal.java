@@ -1,6 +1,6 @@
 package service;
 
-import model.Sucursal;
+import models.Sucursal;
 
 import java.util.List;
 

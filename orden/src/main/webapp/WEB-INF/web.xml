@@ -3,9 +3,7 @@
         "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-    <display-name>OpenXava Application</display-name>
-
-    <!-- To be compliant with OWASP -->
+    <display-name>orden</display-name>
     <error-page>
         <error-code>404</error-code>
         <location>/WEB-INF/error404.html</location>

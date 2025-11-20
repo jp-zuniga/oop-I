@@ -2,9 +2,8 @@
 
 <Context>
     <JarScanner scanClassPath="false"/>
-    <CookieProcessor sameSiteCookies="lax"/> <!-- To be compliant with OWASP -->
-
-    <!-- PostgreSQL -->
+    <CookieProcessor sameSiteCookies="lax"/>
+    
     <Resource name="jdbc/OrdenDS" auth="Container" type="javax.sql.DataSource"
               maxTotal="20" maxIdle="5" maxWaitMillis="10000"
               username="java" password="java_pw"

@@ -6,7 +6,14 @@ import java.util.List;
 
 @Entity
 @Table(name = "AnioPublicacion")
-@NamedQueries({@NamedQuery(name = "AnioPublicacion.All", query = "select e from AnioPublicacion e")})
+@NamedQueries(
+    {
+        @NamedQuery(
+            name = "AnioPublicacion.All",
+            query = "select e from AnioPublicacion e"
+        )
+    }
+)
 public class AnioPublicacion {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -19,10 +26,10 @@ public class AnioPublicacion {
     private String descripcion;
 
     @OneToMany(
-            mappedBy = "anio",
-            cascade = CascadeType.ALL,
-            orphanRemoval = true,
-            fetch = FetchType.LAZY
+        mappedBy = "anio",
+        cascade = CascadeType.ALL,
+        orphanRemoval = true,
+        fetch = FetchType.LAZY
     )
     private List<Publicacion> publicaciones;
 
@@ -70,10 +77,7 @@ public class AnioPublicacion {
 
     @Override
     public String toString() {
-        return "AnioPublicacion{" +
-                "id=" + id +
-                ", anio=" + anio +
-                ", descripcion='" + descripcion + '\'' +
-                '}';
+        return "AnioPublicacion{" + "id=" + id + ", anio=" + anio
+               + ", descripcion='" + descripcion + '\'' + '}';
     }
 }

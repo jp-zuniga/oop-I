@@ -5,10 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4e2303c-85c9-4244-90a9-e73db44ff48f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/java/org/example/DemoFacultad/models/Carrera.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/java/DemoFacultad/models/Carrera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/java/org/example/DemoFacultad/models/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/java/DemoFacultad/models/Estudiante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/java/org/example/DemoFacultad/models/Facultad.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/java/DemoFacultad/models/Facultad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/java/org/example/DemoFacultad/run/DemoFacultad.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/java/DemoFacultad/run/DemoFacultad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/resources/i18n/DemoFacultad-labels_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/resources/i18n/DemoFacultad-labels_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/resources/i18n/DemoFacultad-messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/resources/i18n/DemoFacultad-messages_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/resources/naviox-users.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/resources/naviox-users.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/resources/naviox.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/resources/naviox.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/resources/xava.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/resources/xava.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/resources/xava/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/resources/xava/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/resources/xava/controllers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/resources/xava/controllers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/resources/xava/editors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/resources/xava/editors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/webapp/naviox/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/webapp/naviox/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/webapp/xava/editors/js/yourEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/webapp/xava/editors/js/yourEditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/webapp/xava/editors/yourEditor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/webapp/xava/editors/yourEditor.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-facultad/src/main/webapp/xava/style/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-facultad/src/main/webapp/xava/style/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examen-c2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../examen-c2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examen-c2/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../examen-c2/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examen-c2/src/main/java/models/AnioPublicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../examen-c2/src/main/java/models/AnioPublicacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examen-c2/src/main/java/models/Publicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../examen-c2/src/main/java/models/Publicacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examen-c2/src/main/java/services/EntityManagerAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../examen-c2/src/main/java/services/EntityManagerAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examen-c2/src/main/java/services/ImplIDAOAnioPublicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../examen-c2/src/main/java/services/ImplIDAOAnioPublicacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examen-c2/src/main/java/services/ImplIDAOPublicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../examen-c2/src/main/java/services/ImplIDAOPublicacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examen-c2/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../examen-c2/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Sucursal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Sucursal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Sucursal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Sucursal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/EntityManagerAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EntityManagerAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/IDAOSucursal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IDAOSucursal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/ImplDAOSucursal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ImplDAOSucursal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orden/src/main/webapp/naviox/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practica-hp/src/main/java/models/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practica-hp/src/main/java/models/Factura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practica-hp/src/main/java/services/EntityManagerAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practica-hp/src/main/java/services/EntityManagerAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practica-hp/src/main/java/services/ImplDAOFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practica-hp/src/main/java/services/ImplDAOFactura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practica-hp/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practica-hp/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,22 +76,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "main",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.22624055",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22624055&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.JAVA&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e4e2303c-85c9-4244-90a9-e73db44ff48f" name="Changes" comment="" />
@@ -66,6 +106,9 @@
       <workItem from="1756357885837" duration="278000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Project Default" />

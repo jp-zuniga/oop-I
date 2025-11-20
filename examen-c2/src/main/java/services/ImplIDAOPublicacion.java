@@ -12,14 +12,17 @@ public class ImplIDAOPublicacion implements IDAOPublicacion {
     public List<Publicacion> getAll(String nameQuery) {
         EntityManager entityManager = EntityManagerAdmin.getInstance();
         try {
-            TypedQuery<Publicacion> query = entityManager.createNamedQuery(nameQuery, Publicacion.class);
+            TypedQuery<Publicacion> query =
+                entityManager.createNamedQuery(nameQuery,
+                Publicacion.class
+            );
             return query.getResultList();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
             entityManager.close();
         }
-        
+
         return null;
     }
 
@@ -58,7 +61,10 @@ public class ImplIDAOPublicacion implements IDAOPublicacion {
         EntityManager entityManager = EntityManagerAdmin.getInstance();
         try {
             entityManager.getTransaction().begin();
-            Publicacion p = entityManager.find(Publicacion.class, entity.getId());
+            Publicacion p = entityManager.find(
+                Publicacion.class,
+                entity.getId()
+            );
             if (p != null) {
                 p.setRestrictiva(true);
                 entityManager.merge(p);

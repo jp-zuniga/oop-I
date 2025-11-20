@@ -2,12 +2,11 @@
 
 <Context>
     <JarScanner scanClassPath="false"/>
-    <CookieProcessor sameSiteCookies="lax"/> <!-- To be compliant with OWASP -->
+    <CookieProcessor sameSiteCookies="lax"/>
 
-    <!-- PostgreSQL -->
-    <Resource name="jdbc/DemoFacultadDS" auth="Container" type="javax.sql.DataSource"
+    <Resource name="jdbc/demo-facultadDS" auth="Container" type="javax.sql.DataSource"
               maxTotal="20" maxIdle="5" maxWaitMillis="10000"
-              username="jpauser" password="jpatestpw"
+              username="java" password="java_pw"
               driverClassName="org.postgresql.Driver"
-              url="jdbc:postgresql://localhost:5432/jpademo"/>
+              url="jdbc:postgresql://localhost:5432/java_tmp"/>
 </Context>

@@ -6,10 +6,18 @@ import java.util.Date;
 
 @Entity
 @Table(name = "Publicacion")
-@NamedQueries({@NamedQuery(name = "Publicacion.All", query = "select e from Publicacion e")})
+@NamedQueries(
+    {
+        @NamedQuery(
+            name = "Publicacion.All",
+            query = "select e from Publicacion e"
+        )
+    }
+)
 @NamedQuery(
-        name = "Publicacion.PorAnio",
-        query = "select p from Publicacion as p join AnioPublicacion as a on p.anio.anio = a.anio"
+    name = "Publicacion.PorAnio",
+    query = "select p from Publicacion as p join AnioPublicacion as a on p"
+            + ".anio.anio = a.anio"
 )
 public class Publicacion {
     @Id
@@ -17,7 +25,10 @@ public class Publicacion {
     private int id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "anio_id", nullable = false)
+    @JoinColumn(
+        name = "anio_id",
+        nullable = false
+    )
     private AnioPublicacion anio;
 
     @Column
@@ -93,14 +104,9 @@ public class Publicacion {
 
     @Override
     public String toString() {
-        return "Publicacion{" +
-                "id=" + id +
-                ", anio=" + anio +
-                ", descripcion='" + descripcion + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", fecha=" + fecha +
-                ", titulo='" + titulo + '\'' +
-                ", restrictiva=" + restrictiva +
-                '}';
+        return "Publicacion{" + "id=" + id + ", anio=" + anio
+               + ", descripcion='" + descripcion + '\'' + ", nombre='" + nombre
+               + '\'' + ", fecha=" + fecha + ", titulo='" + titulo + '\''
+               + ", restrictiva=" + restrictiva + '}';
     }
 }

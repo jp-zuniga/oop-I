@@ -6,7 +6,11 @@ import java.util.Date;
 
 @Entity
 @Table(name = "factura")
-@NamedQueries({@NamedQuery(name = "Factura.All", query = "select e from Factura e")})
+@NamedQueries(
+    {
+        @NamedQuery(name = "Factura.All", query = "select e from Factura e")
+    }
+)
 public class Factura {
     @Id
     private int numeroFactura;
@@ -54,11 +58,8 @@ public class Factura {
 
     @Override
     public String toString() {
-        return "Factura{" +
-                "numeroFactura=" + numeroFactura +
-                ", total=" + total +
-                ", nombreCliente='" + nombreCliente + '\'' +
-                ", fecha=" + fecha +
-                '}';
+        return "Factura{" + "numeroFactura=" + numeroFactura + ", total="
+               + total + ", nombreCliente='" + nombreCliente + '\'' + ", fecha="
+               + fecha + '}';
     }
 }

@@ -10,14 +10,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         IDAOAnioPublicacion anioDao = new ImplIDAOAnioPublicacion();
-//        AnioPublicacion anio = new AnioPublicacion();
-//        anio.setAnio(1990);
-//        anio.setDescripcion("test");
-//
-//        dao.insert(anio);
 
         IDAOPublicacion dao = new ImplIDAOPublicacion();
-        Publicacion pub = new Publicacion();
+        Publicacion     pub = new Publicacion();
         pub.setAnio(anioDao.findById(1));
         pub.setNombre("test");
         pub.setFecha(new Date());

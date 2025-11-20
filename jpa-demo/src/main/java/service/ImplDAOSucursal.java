@@ -2,7 +2,7 @@ package service;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
-import model.Sucursal;
+import models.Sucursal;
 
 import java.util.List;
 
@@ -10,7 +10,10 @@ public class ImplDAOSucursal implements IDAOSucursal {
     @Override
     public List<Sucursal> getAll(String nameQuery) {
         try (EntityManager em = EntityManagerAdmin.getInstance()) {
-            TypedQuery<Sucursal> query = em.createNamedQuery(nameQuery, Sucursal.class);
+            TypedQuery<Sucursal> query = em.createNamedQuery(
+                nameQuery,
+                Sucursal.class
+            );
             return query.getResultList();
         } catch (Exception e) {
             //noinspection CallToPrintStackTrace

@@ -7,11 +7,13 @@ import models.AnioPublicacion;
 import java.util.List;
 
 public class ImplIDAOAnioPublicacion implements IDAOAnioPublicacion {
-    @Override
-    public List<AnioPublicacion> getAll(String nameQuery) {
+    @Override public List<AnioPublicacion> getAll(String nameQuery) {
         EntityManager entityManager = EntityManagerAdmin.getInstance();
         try {
-            TypedQuery<AnioPublicacion> query = entityManager.createNamedQuery(nameQuery, AnioPublicacion.class);
+            TypedQuery<AnioPublicacion> query =
+                entityManager.createNamedQuery(nameQuery,
+                AnioPublicacion.class
+            );
             return query.getResultList();
         } catch (Exception e) {
             e.printStackTrace();
@@ -22,8 +24,7 @@ public class ImplIDAOAnioPublicacion implements IDAOAnioPublicacion {
         return null;
     }
 
-    @Override
-    public void insert(AnioPublicacion entity) {
+    @Override public void insert(AnioPublicacion entity) {
         EntityManager entityManager = EntityManagerAdmin.getInstance();
         try {
             entityManager.getTransaction().begin();
@@ -37,8 +38,7 @@ public class ImplIDAOAnioPublicacion implements IDAOAnioPublicacion {
         }
     }
 
-    @Override
-    public void update(AnioPublicacion entity) {
+    @Override public void update(AnioPublicacion entity) {
         EntityManager entityManager = EntityManagerAdmin.getInstance();
         try {
             entityManager.getTransaction().begin();
@@ -52,12 +52,14 @@ public class ImplIDAOAnioPublicacion implements IDAOAnioPublicacion {
         }
     }
 
-    @Override
-    public void delete(AnioPublicacion entity) {
+    @Override public void delete(AnioPublicacion entity) {
         EntityManager entityManager = EntityManagerAdmin.getInstance();
         try {
             entityManager.getTransaction().begin();
-            AnioPublicacion p = entityManager.find(AnioPublicacion.class, entity.getId());
+            AnioPublicacion p = entityManager.find(
+                AnioPublicacion.class,
+                entity.getId()
+            );
             if (p != null) {
                 entityManager.merge(p);
             }
@@ -71,8 +73,7 @@ public class ImplIDAOAnioPublicacion implements IDAOAnioPublicacion {
         }
     }
 
-    @Override
-    public AnioPublicacion findById(Integer id) {
+    @Override public AnioPublicacion findById(Integer id) {
         EntityManager entityManager = EntityManagerAdmin.getInstance();
         try {
             return entityManager.find(AnioPublicacion.class, id);

@@ -1,4 +1,4 @@
-import model.Sucursal;
+import models.Sucursal;
 import service.IDAOSucursal;
 import service.ImplDAOSucursal;
 
